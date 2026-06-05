@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    height: 100%;
+    width: 100vw;
+    background: linear-gradient(180deg, rgb(255, 255, 255), rgb(100, 100, 100));
+}
+
+main h1 {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+/* Cards Section Design */
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    height: 420px;
+    width: 340px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+    margin: 10px 10px;
+}
+
+.cardimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardimage img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 15px 0px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card h3 {
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.card p {
+    text-align: center;
+    line-height: 21px;
+}
+
+.cardbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardbutton button {
+    padding: 12px 22px;
+    font-weight: 600;
+    border: 2px solid rgb(255, 0, 255);
+    background-color: rgb(255, 0, 255);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 20px 0px;
+}
+
+/* Cards Responsiveness */
+
+@media (max-width: 1750px) {
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary-bgColor: rgb(255, 255, 255);
+    --secondary-bgColor: rgb(200, 200, 200);
+    --text-color: rgb(0, 0, 0);
+    --button-color: rgb(0, 0, 255);
+    --blue-card: rgb(0, 195, 255);
+    --pink-card: rgb(255, 59, 190);
+    --yellow-card: rgb(255, 255, 0);
+    --purple-card: rgb(255, 0, 255);
+    --green-card: rgb(0, 255, 0);
+    --red-card: rgb(255, 0, 0);
+}
+
+/* Navbar Section Design */
+.navbar {
+    height: 100px;
+    width: 85%;
+    margin: auto;
+    background-color: var(--primary-bgColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 i {
+    color: var(--button-color);
+}
+
+.navbar .navbarlinks a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 0px 15px;
+    transition: all 0.4s linear;
+}
+
+.navbar .navbarlinks a:hover {
+    color: var(--button-color);
+}
+
+.navbar button {
+    padding: 10px 20px;
+    color: var(--primary-bgColor);
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Navbar Section Media Query */
+@media (max-width: 850px) {
+    .navbar .navbarlinks a {
+        display: none;
+    }
+}
+
+@media (max-width: 350px) {
+    .navbar button {
+        display: none;
+    }
+}
+
+/* Hero Section Design */
+.hero {
+    height: 80vh;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero .lefthero h3 {
+    color: var(--button-color);
+}
+
+.hero .lefthero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.hero .lefthero p {
+    font-size: 0.97rem;
+    line-height: 21px;
+    margin: 30px 0px;
+    color: var(--text-color);
+    text-align: left;
+}
+
+.hero .lefthero .leftherobuttons #start {
+    padding: 10px 20px;
+    color: var(--primary-bgColor);
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.hero .lefthero .leftherobuttons #tour {
+    padding: 10px 20px;
+    color: var(--primary-bgColor);
+    background-color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.hero .righthero img {
+    height: 500px;
+    width: 500px;
+    border-radius: 30px;
+}
+
+/* Hero Section Media Query */
+@media (max-width: 1435px) {
+    .hero .lefthero h1 {
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width: 1363px) {
+    .hero .lefthero h1 {
+        font-size: 2.9rem;
+    }
+}
+
+@media (max-width: 1297px) {
+    .hero .lefthero h1 {
+        font-size: 2.6rem;
+    }
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        height: 100%;
+    }
+    .lefthero {
+        margin: 20px 0px;
+    }
+    .hero .lefthero p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 604px) {
+    .hero .lefthero p {
+        font-size: 0.92rem;
+    }
+    .hero .righthero img {
+        height: 450px;
+        width: 450px;
+    }
+}
+
+@media (max-width: 571px) {
+    .hero .lefthero p {
+        font-size: 0.92rem;
+    }
+    .hero .righthero img {
+        height: 400px;
+        width: 400px;
+    }
+    .hero .lefthero h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 536px) {
+    .hero .lefthero p {
+        font-size: 0.85rem;
+    }
+    .hero .righthero img {
+        height: 370px;
+        width: 370px;
+    }
+    .hero .lefthero h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 496px) {
+    .hero .lefthero p {
+        font-size: 0.8rem;
+    }
+    .hero .righthero img {
+        height: 340px;
+        width: 340px;
+    }
+    .hero .lefthero h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 433px) {
+    .hero .lefthero p {
+        font-size: 0.75rem;
+    }
+    .hero .righthero img {
+        height: 300px;
+        width: 300px;
+    }
+    .hero .lefthero h1 {
+        font-size: 1.6rem;
+    }
+    .hero .lefthero h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 407px) {
+    .hero .lefthero p {
+        font-size: 0.7rem;
+    }
+    .hero .righthero img {
+        height: 280px;
+        width: 280px;
+    }
+    .hero .lefthero h1 {
+        font-size: 1.4rem;
+    }
+    .hero .lefthero h3 {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 379px) {
+    .hero .lefthero p {
+        font-size: 0.6rem;
+    }
+    .hero .righthero img {
+        height: 270px;
+        width: 270px;
+    }
+    .hero .lefthero h1 {
+        font-size: 1.3rem;
+    }
+    .hero .lefthero h3 {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .hero .lefthero p {
+        font-size: 0.58rem;
+    }
+    .hero .righthero img {
+        height: 260px;
+        width: 260px;
+    }
+}
+
+/* Companies Section Design */
+.companies {
+    height: 100px;
+    width: 85%;
+    margin: auto;
+    background-color: var(--secondary-bgColor);
+    margin-bottom: 20px;
+}
+
+.companies h2 {
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.companies .companieslinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.companies .companieslinks a {
+    text-decoration: underline;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    margin: 0px 20px;
+}
+
+/* Companies Section Media Query */
+@media (max-width: 505px) {
+    .companies .companieslinks a {
+        margin: 0px 10px;
+    }
+}
+
+@media (max-width: 410px) {
+    .companies .companieslinks a {
+        margin: 0px 6px;
+        font-size: 0.97rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .companies .companieslinks a {
+        margin: 0px 5px;
+        font-size: 0.94rem;
+    }
+}
+
+/* Cards Section Design */
+.productcards {
+    height: 1000px;
+    width: 100%;
+    background-color: var(--secondary-bgColor);
+}
+
+.productcards h1 {
+    padding-top: 20px;
+}
+
+.productcards h1, p {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.productcards #para {
+    color: var(--text-color);
+}
+
+.productcards .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productcards .cards .card {
+    height: 250px;
+    width: 360px;
+    background-color: var(--blue-card);
+    margin: 20px 20px;
+    border-radius: 10px;
+}
+
+.productcards .cards .card .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productcards .cards .card .icons i {
+    font-size: 30px;
+    background-color: var(--primary-bgColor);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding-top: 13px;
+    color: var(--button-color);
+    margin: 15px 0px;
+}
+
+.productcards .cards .card h3, p {
+    text-align: center;
+    color: var(--primary-bgColor);
+}
+
+.productcards .cards .card h3 {
+    margin: 10px 0px;
+}
+
+.productcards .cards .card  p {
+    font-size: 0.97rem;
+    line-height: 21px;
+    padding: 0px 10px;
+}
+
+.productcards .cards #card0 .icons .blue {
+    color: var(--blue-card);
+}
+
+.productcards .cards #card1 {
+    background-color: var(--pink-card);
+}
+
+.productcards .cards #card1 .icons .pink {
+    color: var(--pink-card);
+}
+
+.productcards .cards #card2 {
+    background-color: var(--yellow-card);
+}
+
+.productcards .cards #card2 .icons .yellow {
+    color: var(--yellow-card);
+}
+
+.productcards .cards #card3 {
+    background-color: var(--purple-card);
+}
+
+.productcards .cards #card3 .icons .purple {
+    color: var(--purple-card);
+}
+
+.productcards .cards #card4 {
+    background-color: var(--green-card);
+}
+
+.productcards .cards #card4 .icons .green {
+    color: var(--green-card);
+}
+
+.productcards .cards #card5 {
+    background-color: var(--red-card);
+}
+
+.productcards .cards #card5 .icons .red {
+    color: var(--red-card);
+}
+
+/* ProductCards Section Media Query */
+@media (max-width: 800px) {
+    .productcards {
+        height: 100%;
+    }
+    .productcards .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
